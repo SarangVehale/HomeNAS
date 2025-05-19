@@ -19,4 +19,4 @@ http://localhost:80/admin
 
 Login credentials:
 •  Username: admin
-•  Password: Fl0F5v2D
+•  Password: password 
