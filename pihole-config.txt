@@ -1,0 +1,22 @@
+docker run -d \
+  --name pihole \
+  -e TZ="Europe/London" \
+  -e WEBPASSWORD="yourpassword" \
+  -p 53:53/tcp -p 53:53/udp \
+  -p 80:80 \
+  -v "$(pwd)/etc-pihole/:/etc/pihole/" \
+  -v "$(pwd)/etc-dnsmasq.d/:/etc/dnsmasq.d/" \
+  --dns=127.0.0.1 --dns=1.1.1.1 \
+  --restart=unless-stopped \
+  --hostname pi.hole \
+  --cap-add=NET_ADMIN \
+  pihole/pihole
+  
+  
+ 
+You can now access the Pi-hole web interface by going to:
+http://localhost:80/admin
+
+Login credentials:
+•  Username: admin
+•  Password: Fl0F5v2D
