@@ -116,8 +116,8 @@ sudo chown -R $DEFAULT_USERNAME:$DEFAULT_USERNAME "$MOUNT_POINT" || error_exit "
 
 #--- 11. Optional Dynamic DNS (via DuckDNS) ---
 echo "[12/13] Setting up Dynamic DNS (DuckDNS)..."
-DUCKDNS_TOKEN="<your_duckdns_token>"
-DUCKDNS_DOMAIN="<your_duckdns_domain>"
+DUCKDNS_TOKEN="721e48df-8ce6-48ee-b705-b5ba9b66873d"
+DUCKDNS_DOMAIN="homenodeserver.duckdns.org"
 if [ -z "$DUCKDNS_TOKEN" ] || [ -z "$DUCKDNS_DOMAIN" ]; then
     echo "Skipping Dynamic DNS setup. Please configure your DuckDNS details."
 else
